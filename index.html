@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><pxbull-clone></title>
+    <title>pxbull-clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-<header>
+<header class="site-header">
     <nav class="navbar">
-
-        <div class="logo">
-            <img src="images/logo.png" alt="logo">
+        <!-- Exact Logo Setup -->
+        <div class="logo-container">
+            <span class="logo-box">PX</span>
+            <span class="logo-text">BULL</span>
         </div>
 
-        <a href="#" class="join-btn">
-            Join Community
-        </a>
+        <!-- Mobile Hamburger Controls -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
+        <!-- Navigation Menus -->
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="dropdown-trigger">Academy <span class="arrow">∨</span></a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="#" class="link-portal">Client Portal</a>
+                <a href="#" class="btn-consultation">Start Consultation</a>
+            </div>
+        </div>
     </nav>
 </header>
-
-
-
-
-
-
-
-
 
 </body>
 </html>
