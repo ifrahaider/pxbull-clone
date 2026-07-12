@@ -404,4 +404,150 @@ body {
     font-weight: 700; 
 
 }
+.features-section {
+
+    padding: 96px 16px; /* Increased vertical padding for more breathing room */
+    background-color: #f9fafb; /* THIS IS THE KEY: A very light, soft gray */
+    width: 100%;
+
+}
+
+.features-grid {
+    
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    
+}
+
+.feature-card {
+
+    background: #ffffff; /* The cards remain white for contrast against the light gray bg */
+    padding: 32px;
+    border-radius: 24px;
+    border: 1px solid #f3f4f6;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    
+}
+
+.feature-card:hover { transform: translateY(-5px); }
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    background: #fff5eb; /* Very light orange background */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111827;
+
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.hero-media {
+  display: none;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .hero-media {
+    display: block;
+  }
+}
+
+.glow-bg {
+  position: absolute;
+  border-radius: 50%;
+  width: 256px;
+  height: 256px;
+  filter: blur(48px);
+  z-index: -1;
+}
+
+.top-glow {
+  top: -40px;
+  right: -40px;
+  background: rgba(255, 106, 0, 0.1);
+}
+
+.bottom-glow {
+  bottom: -40px;
+  left: -40px;
+  background: rgba(255, 165, 0, 0.2);
+}
+
+.main-hero-img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.floating-card-badge {
+  position: absolute;
+  top: 50%;
+  left: -32px;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid #f3f4f6;
+  padding: 24px;
+  border-radius: 24px;
+  width: 260px;
+}
+
+.badge-content-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.check-icon-box {
+  padding: 8px;
+  background: #d1fae5;
+  color: #059669;
+  border-radius: 12px;
+  display: flex;
+}
+
+.card-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.card-subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.card-progress-track {
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.card-progress-bar {
+  width: 80%;
+  height: 100%;
+  background: #10b981;
+}
 
