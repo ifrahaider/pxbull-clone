@@ -1170,3 +1170,88 @@ c-section {
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
+.cta-section {
+  /* Diagonal gradient background to match your image */
+background: linear-gradient(110deg, #e6600d 60%, #f87e38 60%);
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+  gap: 40px;
+}
+
+.cta-text h2 {
+  color: white;
+  font-family: 'Inter', sans-serif; 
+  font-weight: 800; 
+  font-size: 56px;  
+  line-height: 1.1;
+  margin: 0 0 16px 0;
+}
+
+.cta-text p {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; 
+  font-size: 20px;  
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Button Container */
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Primary "Browse Courses" Button */
+.btn-primary {
+  background-color: #ffffff;
+  color: #ff6a1a; /* Your orange brand color */
+  padding: 20px 45px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between text and arrow */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+  min-width: 200px;
+
+  white-space: nowrap;
+}
+
+/* Secondary "Contact Us" Button (Transparent with border) */
+.btn-secondary {
+
+white-space: nowrap;
+
+  background-color: transparent;
+  color: #ffffff;
+  padding: 20px 45px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  transition: background 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
