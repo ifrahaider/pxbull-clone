@@ -980,3 +980,84 @@ c-section {
 
 @media (max-width: 940px) { .c-main-container { flex-direction: column; padding: 40px; } .rating-card { right: 20px; } }
 
+/* ===== Search Engine ===== */
+
+
+.success-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.section-title { font-size: 42px; font-weight: 800; color: #111; margin-bottom: 10px; }
+.section-subtitle { color: #666; font-size: 18px; margin-bottom: 60px; }
+
+.steps-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  /* Remove padding-top: 50px; so the circles stay at the top */
+  padding-top: 20px; 
+}
+
+/* DELETE the .steps-container::before block entirely to avoid double lines */
+
+.line {
+  flex-grow: 1;
+  height: 2px;
+  background: #f0f0f0;
+  margin: 10px 20px 0 30px; /* 40px top margin aligns with the middle of the 80px circle */
+  z-index: 0;
+}
+
+.step p {
+  color: #333333; /* Darker, more readable grey */
+  font-weight: 500; /* Slightly bolder for clarity */
+  margin-top: 10px;
+}
+
+.step { 
+  z-index: 2;
+  flex: 1;
+  text-align: center; 
+}
+
+.step-number {
+  background: #ff6a1a;
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 24px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  /* This ensures the circle is solid so it hides the line behind it */
+  box-shadow: 0 6px 0 rgba(255, 255, 255, 0.7), 0 12px 25px rgba(224, 133, 83, 0.5);
+}
+
+.connector-line {
+  position: absolute;
+  top: 60px;     /* Adjust until it centers behind the circles */
+  left: 40px;    /* Starts at the center of the first circle */
+  right: 40px;   /* Ends at the center of the last circle */
+  height: 2px;
+  background: #f0f0f0; /* Make sure this is a visible color */
+  z-index: 0;    /* Sits behind the circles */
+  display: block; /* Ensure it is visible */
+}
+
+.step-title { font-size: 15px; font-weight: 800; margin-bottom: 10px; }
+.step-desc { font-size: 14px; color: #777; line-height: 1.5; padding: 0 10px; }
+
+/* Mobile view: Stack items vertically */
+@media (max-width: 768px) {
+  .steps-container { flex-direction: column; gap: 40px; }
+  .steps-container::before { display: none; } /* Hide line on mobile */
+}
