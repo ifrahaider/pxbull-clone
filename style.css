@@ -1061,3 +1061,112 @@ c-section {
   .steps-container { flex-direction: column; gap: 40px; }
   .steps-container::before { display: none; } /* Hide line on mobile */
 }
+
+/* --- Main Layout --- */
+.testimonials-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f9fafb;
+  font-family: sans-serif;
+}
+
+/* --- Header Styling --- */
+.header-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header-container h2 {
+  color: #121828; 
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.header-container p {
+  color: #586071;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* --- Cards Container --- */
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 40px; 
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06); 
+  width: 380px; 
+  text-align: left;
+  box-sizing: border-box;
+  
+  /* ADD THESE LINES */
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Typography & Elements Inside Card --- */
+.quote-icon {
+  color: #ff6a1a;
+  font-size: 60px;
+  font-family: Georgia, serif;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.quote-text {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  font-style: italic;
+  
+  /* THIS FORCES THE TEXT AREA TO PUSH THE USER-INFO TO THE BOTTOM */
+  flex-grow: 1; 
+}
+
+/* --- User Info Section --- */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+  /* THIS ENSURES IT STAYS AT THE BOTTOM OF THE CARD */
+  margin-top: auto; 
+}
+
+.user-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #121828; 
+  margin: 0;
+}
+
+.role {
+  color: #ff6a1a;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
