@@ -1255,3 +1255,44 @@ white-space: nowrap;
 .btn-secondary:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+:root {
+  --brand-orange: #ff6a1a;
+  --bg-dark: #111827;
+  --text-gray: #9ca3af;
+}
+
+.app-footer { background: var(--bg-dark); padding: 80px 0 40px 0; color: var(--text-gray); }
+.footer-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Grid Layout */
+.footer-links-grid { display: grid; gap: 40px; margin-bottom: 60px; }
+@media (min-width: 768px) { .footer-links-grid { grid-template-columns: 2fr 1fr 1fr 1fr; } }
+
+/* Logo Styling */
+.logo-container { display: flex; align-items: center; gap: 8px; margin-bottom: 24px; }
+.logo-box { background-color: var(--brand-orange); color: white; padding: 4px 8px; border-radius: 6px; font-weight: 800; }
+.logo-text { color: white; font-weight: 800; font-size: 1.25rem; }
+
+/* Brand & Icons */
+.footer-brand-desc { line-height: 1.6; margin-bottom: 20px; font-size: 0.9rem; }
+.social-icons { display: flex; gap: 12px; }
+.social-icon-wrapper { width: 40px; height: 40px; background-color: #1e293b; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+.social-box { width: 16px; height: 16px; background-color: #94a3b8; border-radius: 4px; }
+
+/* Links */
+.footer-col h4 { color: white; margin-bottom: 20px; font-size: 0.9rem; letter-spacing: 0.05em; }
+.footer-col a { display: block; color: var(--text-gray); text-decoration: none; margin-bottom: 12px; font-size: 0.85rem; }
+.footer-col a:hover { color: var(--brand-orange); }
+
+/* Newsletter */
+.newsletter-desc { margin-bottom: 15px; font-size: 0.85rem; }
+.newsletter-input { display: flex; background: #1e293b; border-radius: 8px; padding: 4px; }
+.newsletter-input input { background: transparent; border: none; padding: 10px; color: white; width: 100%; outline: none; }
+.newsletter-input button { background: var(--brand-orange); border: none; color: white; padding: 10px 15px; border-radius: 6px; cursor: pointer; }
+
+/* Bottom Bar */
+.footer-bottom-bar { display: flex; flex-direction: column; gap: 20px; align-items: center; padding-top: 30px; }
+@media (min-width: 768px) { .footer-bottom-bar { flex-direction: row; justify-content: space-between; } }
+.copyright-txt, .footer-legal-links a { font-size: 0.75rem; color: #6b7280; font-weight: 700; letter-spacing: 0.05em; text-decoration: none; }
+.footer-legal-links { display: flex; gap: 24px; }
